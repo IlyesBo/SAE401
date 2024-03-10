@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 10 mars 2024 à 15:19
+-- Généré le : dim. 10 mars 2024 à 15:23
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `aliment` (
-  `id` int(11) NOT NULL,
+  `id_aliment` int(11) NOT NULL,
   `nom` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -39,7 +39,7 @@ CREATE TABLE `aliment` (
 --
 
 CREATE TABLE `box` (
-  `id` int(11) NOT NULL,
+  `id_box` int(11) NOT NULL,
   `nom` varchar(255) DEFAULT NULL,
   `pieces` int(11) DEFAULT NULL,
   `prix` float DEFAULT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE `boxsaveur` (
 --
 
 CREATE TABLE `saveur` (
-  `id` int(11) NOT NULL,
+  `id_saveur` int(11) NOT NULL,
   `nom` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -88,13 +88,13 @@ CREATE TABLE `saveur` (
 -- Index pour la table `aliment`
 --
 ALTER TABLE `aliment`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_aliment`);
 
 --
 -- Index pour la table `box`
 --
 ALTER TABLE `box`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_box`);
 
 --
 -- Index pour la table `boxaliment`
@@ -114,7 +114,7 @@ ALTER TABLE `boxsaveur`
 -- Index pour la table `saveur`
 --
 ALTER TABLE `saveur`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_saveur`);
 
 --
 -- Contraintes pour les tables déchargées
@@ -124,15 +124,15 @@ ALTER TABLE `saveur`
 -- Contraintes pour la table `boxaliment`
 --
 ALTER TABLE `boxaliment`
-  ADD CONSTRAINT `boxaliment_ibfk_1` FOREIGN KEY (`box_id`) REFERENCES `box` (`id`),
-  ADD CONSTRAINT `boxaliment_ibfk_2` FOREIGN KEY (`aliment_id`) REFERENCES `aliment` (`id`);
+  ADD CONSTRAINT `boxaliment_ibfk_1` FOREIGN KEY (`box_id`) REFERENCES `box` (`id_box`),
+  ADD CONSTRAINT `boxaliment_ibfk_2` FOREIGN KEY (`aliment_id`) REFERENCES `aliment` (`id_aliment`);
 
 --
 -- Contraintes pour la table `boxsaveur`
 --
 ALTER TABLE `boxsaveur`
-  ADD CONSTRAINT `boxsaveur_ibfk_1` FOREIGN KEY (`box_id`) REFERENCES `box` (`id`),
-  ADD CONSTRAINT `boxsaveur_ibfk_2` FOREIGN KEY (`saveur_id`) REFERENCES `saveur` (`id`);
+  ADD CONSTRAINT `boxsaveur_ibfk_1` FOREIGN KEY (`box_id`) REFERENCES `box` (`id_box`),
+  ADD CONSTRAINT `boxsaveur_ibfk_2` FOREIGN KEY (`saveur_id`) REFERENCES `saveur` (`id_saveur`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
