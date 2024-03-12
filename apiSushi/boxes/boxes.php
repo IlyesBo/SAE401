@@ -148,5 +148,5 @@ switch ($method) {
         break;
 }
 
-// Fermer la connexion à la base de données
-$database->close();
+// Fermer la connexion à la base de données en utilisant PDO
+$database = null;
