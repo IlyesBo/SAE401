@@ -5,7 +5,7 @@ class Database {
     private $username = 'root'; 
     private $password = ''; 
     private $db_name = 'sushi-gr4'; 
-    private $conn;
+    private $connexion;
 
     // Méthode pour établir la connexion à la base de données
     public function __construct() {
@@ -16,7 +16,7 @@ class Database {
         );
         
         try {
-            $this->conn = new PDO($dsn, $this->username, $this->password, $options);
+            $this->connexion = new PDO($dsn, $this->username, $this->password, $options);
         } catch (PDOException $e) {
             echo 'Erreur de connexion : ' . $e->getMessage();
         }
@@ -24,14 +24,14 @@ class Database {
 
     // Méthode pour exécuter une requête SQL
     public function query($query, $params = []) {
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->connexion->prepare($query);
         $stmt->execute($params);
         return $stmt->fetchAll();
     }
 
     // Méthode pour exécuter une requête SQL sans récupérer de résultats (INSERT, UPDATE, DELETE)
     public function execute($query, $params = []) {
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->connexion->prepare($query);
         return $stmt->execute($params);
     }
 }
