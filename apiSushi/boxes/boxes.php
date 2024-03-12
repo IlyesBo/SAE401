@@ -34,7 +34,8 @@ switch ($method) {
         // Logique pour ajouter un sushi box
         $data = json_decode(file_get_contents("php://input"), true);
 
-        if (isset($data['nom']) && isset($data['pieces']) && isset($data['prix']) && isset($data['image']) && isset($data['saveurs']) && isset($data['aliments'])) {
+        if (isset($data['id_box']) && isset($data['nom']) && isset($data['pieces']) && isset($data['prix']) && isset($data['image']) && isset($data['saveurs']) && isset($data['aliments'])) {
+            $idbox = $data['id_box'];
             $nom = $data['nom'];
             $pieces = $data['pieces'];
             $prix = $data['prix'];
@@ -43,10 +44,10 @@ switch ($method) {
             $aliments = $data['aliments'];
 
             // Insérer le sushi box dans la table box
-            $sql = "INSERT INTO box (nom, pieces, prix, image) VALUES ('$nom', '$pieces', '$prix', '$image')";
+            $sql = "INSERT INTO box (id_nom, nom, pieces, prix, image) VALUES ('$idbox' ,'$nom', '$pieces', '$prix', '$image')";
 
             if ($database->execute($sql)) {
-                $boxId = $database->getLastInsertId();
+                $boxId = $database->lastInsertId();
 
                 // Insérer les saveurs du sushi box dans la table boxsaveur
                 foreach ($saveurs as $saveurId) {
