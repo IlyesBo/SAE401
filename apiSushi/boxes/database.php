@@ -4,7 +4,7 @@ class Database {
     private $host = 'localhost'; 
     private $username = 'root'; 
     private $password = ''; 
-    private $db_name = 'sushi-gr4'; 
+    private $db_name = 'sushi'; 
     private $conn;
 
     // Méthode pour établir la connexion à la base de données

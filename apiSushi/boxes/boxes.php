@@ -2,7 +2,7 @@
 
 require_once 'database.php';
 
-$database = new Database(); // Instancier un objet de la classe Database pour établir une connexion à la base de données
+$database = new Database(); 
 
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -44,7 +44,7 @@ switch ($method) {
             $aliments = $data['aliments'];
 
             // Insérer le sushi box dans la table box
-            $sql = "INSERT INTO box (id_nom, nom, pieces, prix, image) VALUES ('$idbox' ,'$nom', '$pieces', '$prix', '$image')";
+            $sql = "INSERT INTO box (id_box, nom, pieces, prix, image) VALUES ('$idbox' ,'$nom', '$pieces', '$prix', '$image')";
 
             if ($database->execute($sql)) {
                 $boxId = $database->lastInsertId();
