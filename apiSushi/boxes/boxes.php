@@ -74,7 +74,7 @@ switch ($method) {
 
         if (isset($data['id_box']) && isset($data['nom']) && isset($data['pieces']) && isset($data['prix']) && isset($data['image']) && isset($data['saveurs']) && isset($data['aliments'])) {
             $idBox = $data['id_box'];
-            $nom = $data['nom'];
+                       $nom = $data['nom'];
             $pieces = $data['pieces'];
             $prix = $data['prix'];
             $image = $data['image'];
