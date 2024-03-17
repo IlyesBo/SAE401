@@ -30,46 +30,63 @@ switch ($method) {
         echo json_encode($sushiBoxes);
         break;
     
-    case 'POST':
-        // Logique pour ajouter un sushi box
-        $data = json_decode(file_get_contents("php://input"), true);
+  case 'POST':
+    // Logique pour ajouter un sushi box
+    $data = json_decode(file_get_contents("php://input"), true);
 
-        if (isset($data['id_box']) && isset($data['nom']) && isset($data['pieces']) && isset($data['prix']) && isset($data['image']) && isset($data['saveurs']) && isset($data['aliments'])) {
-            $idbox = $data['id_box'];
-            $nom = $data['nom'];
-            $pieces = $data['pieces'];
-            $prix = $data['prix'];
-            $image = $data['image'];
-            $saveurs = $data['saveurs'];
-            $aliments = $data['aliments'];
+    if (isset($data['id_box']) && isset($data['nom']) && isset($data['pieces']) && isset($data['prix']) && isset($data['image']) && isset($data['saveurs']) && isset($data['aliments'])) {
+        $idbox = $data['id_box'];
+        $nom = $data['nom'];
+        $pieces = $data['pieces'];
+        $prix = $data['prix'];
+        $image = $data['image'];
+        $saveurs = $data['saveurs'];
+        $aliments = $data['aliments'];
 
-            // Insérer le sushi box dans la table box
-            $sql = "INSERT INTO box (id_box, nom, pieces, prix, image) VALUES ('$idbox' ,'$nom', '$pieces', '$prix', '$image')";
+        $database = new Database();
+        $conn = $database->getConnection();
 
-            if ($database->execute($sql)) {
-                $boxId = $database->lastInsertId();
+        // Vérifier si l'id_box existe déjà
+        $checkSql = "SELECT * FROM box WHERE id_box = ?";
+        $stmt = $conn->prepare($checkSql);
+        $stmt->execute([$idbox]);
+        $exists = $stmt->fetch();
 
-                // Insérer les saveurs du sushi box dans la table boxsaveur
-                foreach ($saveurs as $saveurId) {
-                    $saveurSql = "INSERT INTO boxsaveur (box_id, saveur_id) VALUES ('$boxId', '$saveurId')";
-                    $database->execute($saveurSql);
-                }
-
-                // Insérer les aliments du sushi box dans la table boxaliment
-                foreach ($aliments as $alimentId) {
-                    $alimentSql = "INSERT INTO boxaliment (box_id, aliment_id, quantite) VALUES ('$boxId', '$alimentId', 1)";
-                    $database->execute($alimentSql);
-                }
-
-                http_response_code(201); // Créé avec succès
-                echo "Le sushi box a été ajouté avec succès.";
-            } else {
-                http_response_code(500); // Erreur de serveur
-            }
+        if ($exists) {
+            http_response_code(409); // Conflit
+            echo "Un sushi box avec cet id existe déjà.";
         } else {
-            http_response_code(400); 
+            // Insérer le sushi box dans la table box
+            $sql = "INSERT INTO box (id_box, nom, pieces, prix, image) VALUES (?, ?, ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$idbox, $nom, $pieces, $prix, $image]);
+            $boxId = $conn->lastInsertId();
+
+            $saveurSql = "INSERT INTO boxsaveur (box_id, saveur_id, nom_box, nom_saveur) VALUES (?, ?, ?, ?)";
+            foreach ($saveurs as $saveurId => $nomSaveur) {
+                $stmtSaveur = $conn->prepare($saveurSql);
+                $stmtSaveur->execute([$boxId, $saveurId, $nom, $nomSaveur]);
+            }
+
+            // Définition de la requête SQL pour les aliments
+            $alimentSql = "INSERT INTO boxaliment (box_id, aliment_id, quantite, nom_box, nom_aliment) VALUES (?, ?, ?, ?, ?)";
+            foreach ($aliments as $alimentId => $nomAliment) {
+                $stmtAliment = $conn->prepare($alimentSql);
+                $stmtAliment->execute([$boxId, $alimentId, 1, $nom, $nomAliment]);
+            }
+
+            http_response_code(201); // Créé avec succès
+            echo "Le sushi box a été ajouté avec succès.";
         }
-        break;
+    } else {
+        http_response_code(400); // Mauvaise requête
+        echo "Les données nécessaires ne sont pas fournies.";
+    }
+    break;
+
+
+
+
     
     case 'PUT':
         // Mettre à jour un sushi box

@@ -1,10 +1,10 @@
 <?php
 
 class Database {
-    private $host = 'localhost'; 
-    private $username = 'root'; 
-    private $password = ''; 
-    private $db_name = 'sushi'; 
+    private $host = 'localhost';
+    private $username = 'root';
+    private $password = '';
+    private $db_name = 'sushi';
     private $conn;
 
     // Méthode pour établir la connexion à la base de données
@@ -22,16 +22,21 @@ class Database {
         }
     }
 
+    // Méthode pour obtenir l'objet de connexion
+    public function getConnection() {
+        return $this->conn;
+    }
+
     // Méthode pour exécuter une requête SQL
     public function query($query, $params = []) {
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->getConnection()->prepare($query);
         $stmt->execute($params);
         return $stmt->fetchAll();
     }
 
     // Méthode pour exécuter une requête SQL sans récupérer de résultats (INSERT, UPDATE, DELETE)
     public function execute($query, $params = []) {
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->getConnection()->prepare($query);
         return $stmt->execute($params);
     }
 }
