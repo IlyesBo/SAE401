@@ -1,3 +1,40 @@
+<?php
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Factory\AppFactory;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = AppFactory::create();
+
+// Middleware pour ajouter des en-têtes CORS à la réponse
+$app->add(function (Request $request, $handler): Response {
+    $response = $handler->handle($request);
+    return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+});
+
+// Route pour afficher la liste des boxes de sushi
+$app->get('/api/boxes', function (Request $request, Response $response) {
+    // Ici, vous intégrerez la logique pour récupérer les données de la base de données
+    $data = []; // Les données récupérées de la base de données seront stockées ici
+    $response->getBody()->write(json_encode($data));
+    return $response->withHeader('Content-Type', 'application/json');
+});
+
+// Route pour voir le détail d'une boxe spécifique
+$app->get('/api/boxes/{id}', function (Request $request, Response $response, array $args) {
+    // Logique pour récupérer les détails d'une boxe spécifique
+    $id = $args['id'];
+    $data = []; // Les détails de la boxe seront récupérés et stockés ici
+    $response->getBody()->write(json_encode($data));
+    return $response->withHeader('Content-Type', 'application/json');
+});
+
+
+$app->run();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
