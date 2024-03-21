@@ -16,3 +16,25 @@ En tant que chef de projet, je coordonne les efforts de l'équipe tout en contri
 
 # Alan Leszek (Ales230): 
 Responsable de la partie back-end du projet, mon rôle 
+
+# Joris Dupre (): 
+
+# Nathan Robert (): 
+
+# Nom et Logo de l'application
+
+Nous avons choisis le nom 'Sushill" qui est un jeux de mots venant de l'expression anglaise "So chill" ( si calme/détendu en français), le logo fait référence au nom avec la représentation d'un sushi sous forme d'un personnage qui porte des lunettes de soleil qui pose de manière détendu.
+
+![image](https://github.com/IlyesBo/SAE401/assets/115214794/fc6d7e8c-a440-44bd-8a01-65f0a7af76a7)
+
+
+# Diagramme Use Case
+
+![diag_use_case drawio](https://github.com/IlyesBo/SAE401/assets/115214794/3b45965c-c88c-4c89-8052-e681f077ab9f)
+
+# Diagramme Use Case
+
+![diag_activités drawio](https://github.com/IlyesBo/SAE401/assets/115214794/0dc58e02-163a-4a4c-b9db-0e54c373b648)
+
+
+
