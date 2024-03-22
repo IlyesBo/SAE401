@@ -11,7 +11,7 @@ Vous retrouverez dans ce documents tous les éléments nécessaires à la réali
 
 # Répartition des tâches
 
-Nous avons plannifier notre projet sur l'outil de gestion de projet en ligne TRELLO, [cliquez-ici pour y accéder]([lien_vers_le_site](https://trello.com/invite/b/wLtTQiaz/ATTIf68be55ea010272ef062c92d2e3464579689B28D/plannification-sae-401))
+Nous avons plannifier notre projet sur l'outil de gestion de projet en ligne TRELLO, [cliquez-ici pour y accéder](https://trello.com/invite/b/wLtTQiaz/ATTIf68be55ea010272ef062c92d2e3464579689B28D/plannification-sae-401).
 
 
 # Ilyès BOUZIANE (IlyesBO): 
@@ -29,7 +29,7 @@ En tant que designer du projet mon rôle est de travailler sur le visuel du site
 # Nom et Logo de l'application
 
 Nous avons choisis le nom 'Sushill" qui est un jeux de mots venant de l'expression anglaise "So chill" ( si calme/détendu en français), le logo fait référence au nom avec la représentation d'un sushi sous forme d'un personnage qui porte des lunettes de soleil qui pose de manière détendu.
-Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également des boxes personnalisées à implanter sur le site web
+Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également des boxes personnalisées à implanter sur le site web.
 
 ![image](https://github.com/IlyesBo/SAE401/assets/115214794/fc6d7e8c-a440-44bd-8a01-65f0a7af76a7)  ![accueil(1)](https://github.com/IlyesBo/SAE401/assets/115214794/b98b4c04-7151-4659-8be3-68c400f59ded)
 
