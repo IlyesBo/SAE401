@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>SushiCool</title>
     <style>
 body {
@@ -12,13 +14,10 @@ body {
 }
 
 header {
-    background-color: #d9d9d978; /* Couleur de fond gris pour le header */
+    background-color: #A9A9A9; /* Couleur de fond gris pour le header */
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -66,15 +65,22 @@ button:hover {
 <body>
 
 <header>
-    <p>☼<p>
     <nav>
-        <ul>
-            <li><a href="#nos-offres">Nos Offres</a></li>
-            <li><a href="#sushi-a-la-carte">Sushi à la Carte</a></li>
-            <li><a href="#nos-restaurants">Nos Restaurants</a></li>
-        </ul>
-    </nav>
-    <div>Panier</div> <!-- Ajoutez l'icône ou le contenu du panier ici -->
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">A la carte</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Nos Box</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Nos restaurants</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Mon Panier</a>
+  </li>
+</ul>
+</nav>
 </header>
 
 <div>Livraison gratuite à partir de 30€ d'achat</div>
