@@ -3,14 +3,14 @@ Bienvenue sur le repository GitHub de notre projet universitaire dédié à la c
 
 <h3>Contexte</h3>
 
-Ce projet a été réalisé dans le cadre d'un cours universitaire mettant l'accent sur le développement web et la conception d'API. Nous avons choisi de concevoir un site web pour un restaurant de sushi, une entreprise qui nécessite souvent une plateforme en ligne pour permettre aux clients de réserver des tables et de parcourir le menu.
+Ce projet a été réalisé dans le cadre d'un cours universitaire mettant l'accent sur le développement web et la conception d'API. Nous avons choisi de concevoir un site web pour un restaurant de sushi, une entreprise qui nécessite souvent une plateforme en ligne pour permettre aux clients de réserver et parcourir le menu.
 Voici le [cahier des charges](https://github.com/IlyesBo/SAE401/blob/main/Documentation/Cahier%20des%20charges.pdf) qui nous a été fournis.
 
 <h4>Technologies utilisées:</h4>
-Front-end: Angular, Bootstrap, HTML, CSS, TypeScript
+Front-end: Angular, Bootstrap, HTML, CSS, TypeScript <br>
 Back-end: PHP, Typescript
 
-Vous retrouverez dans ce documents tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
+Vous retrouverez dans ce document tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
 
 #Sommaire
 
@@ -34,7 +34,7 @@ Vous retrouverez dans ce documents tous les éléments nécessaires à la réali
 
 <h2 id="répartition-des-tâches">Répartition des tâches</h2>
 
-Nous avons plannifier notre projet sur l'outil de gestion de projet en ligne TRELLO, [cliquez-ici pour y accéder](https://trello.com/invite/b/wLtTQiaz/ATTIf68be55ea010272ef062c92d2e3464579689B28D/plannification-sae-401).
+Nous avons plannifié notre projet sur l'outil de gestion de projet en ligne TRELLO, [cliquez-ici pour y accéder](https://trello.com/invite/b/wLtTQiaz/ATTIf68be55ea010272ef062c92d2e3464579689B28D/plannification-sae-401).
 ![image](https://github.com/IlyesBo/SAE401/assets/115214794/cdd4664e-3117-482a-bf71-cc252585c01e)
 
 
@@ -43,13 +43,13 @@ Nous avons plannifier notre projet sur l'outil de gestion de projet en ligne TRE
 En tant que chef de projet, je coordonne les efforts de l'équipe tout en contribuant activement au développement frontend et backend. Cette approche me permet de superviser le projet de manière globale tout en restant impliqué dans la réalisation des fonctionnalités clés. Mon rôle est d'assurer le bon déroulement du projet en veillant également à repecter les délais imposés.
 
 <h3>Alan LESZEK (Ales230):</h3>
-Responsable de la partie back-end du projet, mon rôle est de mettre en place une API REST fonctionnelle pour gérer les boxes de sushi ainsi que la base de données. J'utilise la méthode CRUD (Create, Read, Update et Delete) pour les mettre à jour. Je l'héberge égagalement sur.....
+Responsable de la partie back-end du projet, mon rôle est de mettre en place une API REST fonctionnelle pour gérer les boxes de sushi ainsi que la base de données. J'utilise la méthode CRUD (Create, Read, Update et Delete) pour les mettre à jour. 
 
 <h3>Joris DUPRE (JSo77):</h3> 
-Au sein du projet, j'ai pensé tout le fonctionnement du site dont les parcours utilisateurs pour que la navigation soit fluide et intuitive. Je suis également développeur front-end donc je suis chargé de traduire le design des maquettes en code.
+Au sein du projet, j'ai pensé tout le fonctionnement du site dont les parcours utilisateurs (UX designer) pour que la navigation soit fluide et intuitive. Je suis également développeur front-end donc je suis chargé de traduire le design des maquettes en code.
 
 <h3>Nathan ROBERT (NathanRobertMMI):</h3>
-En tant que designer du projet mon rôle est de travailler sur le visuel du site, j'ai pu créer un logo, les maquettes avec l'aprobation de l'équipe, les palettes de couleurs ainsi que les typographies, j'aide également au développement front pour traduire la maquette en code.
+En tant que UI designer du projet mon rôle est de travailler sur le visuel du site, j'ai pu créer un logo, les maquettes avec l'aprobation de l'équipe, les palettes de couleurs ainsi que les typographies, j'aide également au développement front pour traduire la maquette en code.
 
 <h2 id="nom-et-logo-de-lapplication">Nom et Logo de l'application</h2>
 
