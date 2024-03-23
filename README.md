@@ -6,7 +6,13 @@ Bienvenue sur le repository GitHub de notre projet universitaire dédié à la c
 Ce projet a été réalisé dans le cadre d'un cours universitaire mettant l'accent sur le développement web et la conception d'API. Nous avons choisi de concevoir un site web pour un restaurant de sushi, une entreprise qui nécessite souvent une plateforme en ligne pour permettre aux clients de réserver des tables et de parcourir le menu.
 
 Vous retrouverez dans ce documents tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
+## Sommaire
 
+- [Livrable L401_1 : Dossier d'analyse](#livrable-l401_1--dossier-danalyse)
+- [Livrable L401_2](#livrable-l401_2)
+- [Livrable L401_3](#livrable-l401_3)
+- [Livrable L401_4](#livrable-l401_4)
+- [Livrable L401_5](#livrable-l401_5)
 # Livrable L401_1 : Dossier d'analyse
 
 <h2>Répartition des tâches</h2>
@@ -135,7 +141,7 @@ https://github.com/IlyesBo/SAE401/commits/main/
 
 ![image](https://github.com/IlyesBo/SAE401/assets/115214794/b9826d46-7463-4733-908a-384df3e84d75)
 
-Livrable : L401_5
+# Livrable : L401_5
 
 
 
