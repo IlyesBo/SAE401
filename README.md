@@ -4,19 +4,26 @@ Bienvenue sur le repository GitHub de notre projet universitaire dédié à la c
 <h3>Contexte</h3>
 
 Ce projet a été réalisé dans le cadre d'un cours universitaire mettant l'accent sur le développement web et la conception d'API. Nous avons choisi de concevoir un site web pour un restaurant de sushi, une entreprise qui nécessite souvent une plateforme en ligne pour permettre aux clients de réserver des tables et de parcourir le menu.
+Voici le [cahier des charges](https://github.com/IlyesBo/SAE401/blob/main/Documentation/Cahier%20des%20charges.pdf) qui nous a été fournis.
 
 Vous retrouverez dans ce documents tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
-## Sommaire
-
 - [Livrable L401_1 : Dossier d'analyse](#livrable-l401_1--dossier-danalyse)
+  - [Répartition des tâches](#répartition-des-tâches)
+  - [Nom et Logo de l'application](#nom-et-logo-de-lapplication)
+  - [Diagramme Use Case](#diagramme-use-case)
+  - [Diagramme d'activités](#diagramme-dactivités)
+  - [Diagramme de classes](#diagramme-de-classes)
 - [Livrable L401_2](#livrable--l401_2)
+  - [Implémentation et architécture de la partie back.](#implémentation-et-architécture-de-la-partie-back)
 - [Livrable L401_3](#livrable--l401_3)
+  - [Maquettes de l'application](#maquettes-de-lapplication)
 - [Livrable L401_4](#livrable--l401_4)
+  - [Intégralité du code de la partie Front avec suivi des mises à jour](#intégralité-du-code-de-la-partie-front-avec-suivi-des-mises-à-jour)
 - [Livrable L401_5](#livrable--l401_5)
 
 # Livrable L401_1 : Dossier d'analyse
 
-<h2>Répartition des tâches</h2>
+<h2 id="répartition-des-tâches">Répartition des tâches</h2>
 
 Nous avons plannifier notre projet sur l'outil de gestion de projet en ligne TRELLO, [cliquez-ici pour y accéder](https://trello.com/invite/b/wLtTQiaz/ATTIf68be55ea010272ef062c92d2e3464579689B28D/plannification-sae-401).
 ![image](https://github.com/IlyesBo/SAE401/assets/115214794/cdd4664e-3117-482a-bf71-cc252585c01e)
@@ -35,7 +42,7 @@ Au sein du projet, j'ai pensé tout le fonctionnement du site dont les parcours 
 <h3>Nathan ROBERT ():</h3>
 En tant que designer du projet mon rôle est de travailler sur le visuel du site, j'ai pu créer un logo, les maquettes avec l'aprobation de l'équipe, les palettes de couleurs ainsi que les typographies, j'aide également au développement front pour traduire la maquette en code.
 
-<h2>Nom et Logo de l'application</h2>
+<h2 id="nom-et-logo-de-lapplication">Nom et Logo de l'application</h2>
 
 Nous avons choisis le nom 'Sushill" qui est un jeux de mots venant de l'expression anglaise "So chill" ( si calme/détendu en français), le logo fait référence au nom avec la représentation d'un sushi sous forme d'un personnage qui porte des lunettes de soleil qui pose de manière détendu.
 Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également des boxes personnalisées à implanter sur le site web.
@@ -46,15 +53,15 @@ Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également de
 
 
 
-<h2>Diagramme Use Case</h2>
+<h2 id="diagramme-use-case">Diagramme Use Case</h2>
 
 ![diag_use_case drawio](https://github.com/IlyesBo/SAE401/assets/115214794/3b45965c-c88c-4c89-8052-e681f077ab9f)
 
-<h2>Diagramme d'activités</h2>
+<h2 id="diagramme-dactivités">Diagramme d'activités</h2>
 
 ![diag_activités drawio](https://github.com/IlyesBo/SAE401/assets/115214794/0dc58e02-163a-4a4c-b9db-0e54c373b648)
 
-<h2>Diagramme des classes</h2>
+<h2 id="diagramme-de-classes">Diagramme de classes</h2>
 
 ![SAE401_Diagramme_classes_groupe4 drawio](https://github.com/IlyesBo/SAE401/assets/115214794/08f6e509-8890-4b09-b019-05e41254803d)
 
@@ -62,7 +69,7 @@ Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également de
 
 # Livrable : L401_2
 
-<h2>Implémentation et architécture de la partie back.</h2>
+<h2 id="implémentation-et-architécture-de-la-partie-back">Implémentation et architécture de la partie back.</h2>
 
 Cliquez sur le lien ci-dessous pour accéder au code de notre api REST:
 
@@ -73,7 +80,7 @@ https://github.com/IlyesBo/SAE401/tree/main/apiSushi
 
 # Livrable : L401_3
 
-<h2>Maquettes de l'application</h2>
+<h2 id="maquettes-de-lapplication">Maquettes de l'application</h2>
 
 Nous avons réaliser la maquette de notre application sur l'éditeur de graphique FIGMA, [cliquez-ici pour accéder à la maquette complète.](https://www.figma.com/file/mJPIAKbHiOl9iZ70PtWVPV/SAE-401-maquette?type=design&node-id=0%3A1&mode=design&t=5dXQOrUazbawneyQ-1)
 
@@ -135,7 +142,7 @@ Voici la version finale:
 
 # Livrable : L401_4
 
-<h2>Intégralité du code de la partie Front avec suivi des mises à jour</h2>
+<h2 id="intégralité-du-code-de-la-partie-front-avec-suivi-des-mises-à-jour">Intégralité du code de la partie Front avec suivi des mises à jour</h2>
 
 Cliquez sur le lien ci-dessous pour visualiser:
 https://github.com/IlyesBo/SAE401/commits/main/
