@@ -12,7 +12,7 @@ Back-end: PHP, Typescript
 
 Vous retrouverez dans ce document tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
 
-#Sommaire
+# Sommaire
 
 - [Livrable L401_1 : Dossier d'analyse](#livrable-l401_1--dossier-danalyse)
   - [Répartition des tâches](#répartition-des-tâches)
