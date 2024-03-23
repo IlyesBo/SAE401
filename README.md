@@ -6,6 +6,10 @@ Bienvenue sur le repository GitHub de notre projet universitaire dédié à la c
 Ce projet a été réalisé dans le cadre d'un cours universitaire mettant l'accent sur le développement web et la conception d'API. Nous avons choisi de concevoir un site web pour un restaurant de sushi, une entreprise qui nécessite souvent une plateforme en ligne pour permettre aux clients de réserver des tables et de parcourir le menu.
 Voici le [cahier des charges](https://github.com/IlyesBo/SAE401/blob/main/Documentation/Cahier%20des%20charges.pdf) qui nous a été fournis.
 
+<h4>Technologies utilisées:</h4>
+Front-end: Angular, Bootstrap, HTML, CSS, TypeScript
+Back-end: PHP, Typescript
+
 Vous retrouverez dans ce documents tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
 - [Livrable L401_1 : Dossier d'analyse](#livrable-l401_1--dossier-danalyse)
   - [Répartition des tâches](#répartition-des-tâches)
