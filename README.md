@@ -11,6 +11,9 @@ Front-end: Angular, Bootstrap, HTML, CSS, TypeScript
 Back-end: PHP, Typescript
 
 Vous retrouverez dans ce documents tous les éléments nécessaires à la réalisation de notre projets, maquettes, diagrammes, plannification codes, rgpd.
+
+#Sommaire
+
 - [Livrable L401_1 : Dossier d'analyse](#livrable-l401_1--dossier-danalyse)
   - [Répartition des tâches](#répartition-des-tâches)
   - [Nom et Logo de l'application](#nom-et-logo-de-lapplication)
@@ -24,6 +27,8 @@ Vous retrouverez dans ce documents tous les éléments nécessaires à la réali
 - [Livrable L401_4](#livrable--l401_4)
   - [Intégralité du code de la partie Front avec suivi des mises à jour](#intégralité-du-code-de-la-partie-front-avec-suivi-des-mises-à-jour)
 - [Livrable L401_5](#livrable--l401_5)
+  - [Page pour la prise en compte des règles RGPD liées à l'application](#rgpd)
+  - [Document comprenent des scénarios malveillants et les mesures pour les contrecarrer](#user-evil)
 
 # Livrable L401_1 : Dossier d'analyse
 
@@ -154,6 +159,14 @@ https://github.com/IlyesBo/SAE401/commits/main/
 ![image](https://github.com/IlyesBo/SAE401/assets/115214794/b9826d46-7463-4733-908a-384df3e84d75)
 
 # Livrable : L401_5
+
+<h2 id="rgpd">Page pour la prise en compte des règles RGPD liées à l'application</h2>
+
+La page de politique de confidentialité sera accéssible dans le footer, [cliquez-ici pour visualiser le rgpd en pdf](https://github.com/IlyesBo/SAE401/blob/main/Documentation/RGPD_SUSHILL.pdf).
+
+<h2 id="user-evil">Document comprenent des scénarios malveillants et les mesures pour les contrecarrer</h2>
+
+Nos user evil stories sont visualisables en [cliquant sur ce lien qui ramène au pdf](https://github.com/IlyesBo/SAE401/blob/main/Documentation/SCENARIOS_MALVEILLANT_SUSHILL.pdf).
 
 
 
