@@ -40,10 +40,10 @@ En tant que chef de projet, je coordonne les efforts de l'équipe tout en contri
 <h3>Alan LESZEK (Ales230):</h3>
 Responsable de la partie back-end du projet, mon rôle est de mettre en place une API REST fonctionnelle pour gérer les boxes de sushi ainsi que la base de données. J'utilise la méthode CRUD (Create, Read, Update et Delete) pour les mettre à jour. Je l'héberge égagalement sur.....
 
-<h3>Joris DUPRE ():</h3> 
+<h3>Joris DUPRE (JSo77):</h3> 
 Au sein du projet, j'ai pensé tout le fonctionnement du site dont les parcours utilisateurs pour que la navigation soit fluide et intuitive. Je suis également développeur front-end donc je suis chargé de traduire le design des maquettes en code.
 
-<h3>Nathan ROBERT ():</h3>
+<h3>Nathan ROBERT (NathanRobertMMI):</h3>
 En tant que designer du projet mon rôle est de travailler sur le visuel du site, j'ai pu créer un logo, les maquettes avec l'aprobation de l'équipe, les palettes de couleurs ainsi que les typographies, j'aide également au développement front pour traduire la maquette en code.
 
 <h2 id="nom-et-logo-de-lapplication">Nom et Logo de l'application</h2>
