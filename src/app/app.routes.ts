@@ -13,7 +13,8 @@ export const routes: Routes = [
   { path: 'boxes', component: BoxesComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'entreprise', component: EntrepriseComponent },
-
+  { path: "app-header", component: HeaderComponent },
+  
 ];
 
 @NgModule({
