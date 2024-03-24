@@ -1,39 +1,36 @@
 <section id="ListCommande">
-    <div *ngIf="noBoxFound" id="panier">
-        <img src="/assets/ressource/Bag.svg" id="_bag">
-        <h1>Votre panier Sushiko est vide</h1>
-        <p><span routerLink="/app-compte">Consultez votre historique de commandes </span> ou <span routerLink="/app-menu"> continuez vos achats.</span></p>
-        <img id="bambouleft"src="http://localhost:4200/assets/ressource/bamboo2.svg" alt="image de bambou">
-        <img id="bambouright"src="http://localhost:4200/assets/ressource/bamboo4.svg" alt="image d'un autre bambou">
-        <img id="Greentopic"src="http://localhost:4200/assets/ressource/greenTopRight2.svg" alt="Green Topic">
-    </div>
-    <div id="commande" routerLink="/app-bag" routerLinkActive="active" *ngIf="!noBoxFound">
-        <h1>Commande(s)</h1>
-        <hr>
-        <div class="command-history">
-            <div class="history1">
-                <div class="command-details" *ngFor="let box of bagBoxes">
-                    <div class="price">
-                        <h3>{{box.nom}}</h3>
-                        <button id="quantite">{{box.quantity}}x</button>
-                    </div>
-                    <ul>
-                        <ng-container *ngFor="let aliment of box.aliments">
-                            <li>{{aliment.nom}} x{{aliment.quantite}}</li>
-                        </ng-container>
-                    </ul>
-                    <div class="buttons">
-                        <div>
-                        <button class="remove-button" (click)="suppBox(box.itemID)">Supprimer</button>
+    <div class="left-section">
+        <div id="commande" routerLink="/app-bag" routerLinkActive="active" *ngIf="!noBoxFound">
+            <h1>Ma Commande</h1>
+            <hr>
+            <div class="command-history">
+                <div class="history1">
+                    <div class="command-details" *ngFor="let box of bagBoxes">
+                        <ul>
+                            <ng-container *ngFor="let aliment of box.aliments">
+                                <li>{{box.quantite}} X {{box.nom}} </li>
+                            </ng-container>
+                        </ul>
+                        <div class="price-quantity">
+                            <h3 id="prix">{{box.prixUnite.toFixed(2)}} €</h3>
+                            <button class="remove-button" (click)="suppBox(box.itemID)">Supprimer</button>
                         </div>
-                        <h3 id="prix">{{box.prixUnite.toFixed(2)}} €</h3>
                     </div>
                 </div>
+                <p>Livraison Offerte</p>
+                <hr>
+            </div>
+            <div class="total-section">
+                <h3 id="prixT">Total : {{totalPrix.toFixed(2)}} €</h3>
+                <button class="commander" (click)="Commander()">Commander</button>
             </div>
         </div>
-        <div class="buttons" id="but">
-            <h3 id="prixT">Total : {{totalPrix.toFixed(2)}} €</h3>
-            <button class="commander" (click)="Commander()">Commander</button>
+        <div *ngIf="noBoxFound" id="panier">
+
+            <h1>Le panier est vide</h1>
         </div>
+    </div>
+    <div class="right-section">
+        <img src="/assets/ressource/suchill.png" alt="Logo">
     </div>
 </section>
