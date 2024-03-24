@@ -1,10 +1,10 @@
 // app.routes.ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BoxesComponent } from './boxes/boxes.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { EntrepriseComponent } from './entreprise/entreprise.component';
+import { BoxesComponent } from './components/boxes/boxes.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EntrepriseComponent } from './components/entreprise/entreprise.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
