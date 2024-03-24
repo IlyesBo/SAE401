@@ -1,0 +1,409 @@
+body{
+    background-color: var(--black);
+    height:100em;
+}
+
+#bambouleft {
+    width: 13em !important;
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+}
+
+#Greentopic {
+    width: 21em !important;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#bambouright {
+    width: 13em !important;
+    position: absolute;
+    left: 0px;
+    bottom: -29px;
+}
+
+.messageempty {
+    font-family:Poppins;
+    font-size:27px;
+    margin-bottom:2px;
+}
+
+#ListCommande {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding-top: 90px;
+    color: white;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#ListCommande > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 50px);
+    padding: 0px 25px;
+    border-radius: 10px;
+    width: auto;
+    flex-direction: row;
+}
+
+#iddiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ListCommande > #divhistoryempty {
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#ListCommande > div > h1 {
+    font-family: Poppins;
+    font-size: 2.3rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+#ListCommande > div > img {
+    width: 35px;
+    cursor: pointer;
+}
+
+#ListCommande > h2 {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+#profil {
+    font-family:Poppins;
+    font-size:31px;
+}
+
+#HistoComm {
+    font-family:Poppins;
+    font-size:28px;
+    margin-bottom:23px;
+}
+
+#ListCommande >  hr {
+    margin: 10px 0px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid var(--green);
+}
+
+#ListCommande .command-history {
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 90px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) transparent;
+}
+.Bmenus{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 24px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top:12px;
+}
+.Bmenus:hover {
+    background-color: white;
+    color: #5d935c !important
+}
+#ListCommande .command-history::after {
+    top: 0px;
+    left: 50%;
+    position: absolute;
+    content:"";
+    height: calc(100% - 90px);
+    width: 1px;
+    border-right: 2px solid var(--green);
+}
+
+#ListCommande .command-history .command-details {
+    position: relative;
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+#ListCommande .command-history .command-details .price {
+    display:flex;
+    justify-content: space-between;
+}
+
+#ListCommande .command-history .command-details .price h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#ListCommande .command-history .command-details .price .prix {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+#ListCommande .command-history .command-details ul {
+    margin: 5px 0px;
+}
+
+#ListCommande .command-history .command-details li {
+    font-family: Poppins;
+    font-size: 1.1rem;
+}
+
+#ListCommande .command-history .command-details .buttons {
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+#ListCommande .command-history .command-details .buttons button {
+    margin-right: 10px;
+    color: var(--white);
+    padding: 5px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+#ListCommande .command-history .command-details .buttons .remove-button {
+    border: 1px solid var(--green);
+    background-color: white;
+    color: black !important;
+    font-family: Poppins;
+}
+
+#ListCommande .command-history .command-details .buttons .annuler {
+    border: 1px solid #E35052;
+    background-color: #E35052;
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#ListCommande .command-history .command-details .buttons .add-button{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color:white;
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+#ListCommande .command-history .command-details .buttons .add-button:hover {
+    background-color: white;
+    color: #5d935c !important
+}
+
+#ListCommande .command-history .command-details .buttons .annuler:hover {
+    background-color: #ac3c3e;
+    border-color: #ac3c3e;
+}
+
+#ListCommande .command-history .command-details .buttons #deconnexion:hover {
+    filter: brightness(0.7) saturate(100%) hue-rotate(0deg) !important;
+}
+#ListCommande .command-history .command-details hr{
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--green);
+    position: absolute;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 1210px) {
+
+    #ListCommande .command-history .command-details .buttons button {
+        margin-right: 10px;
+        color: var(--white);
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        font-weight: 500;
+    }
+
+    p {
+        margin-right: 2em;
+        font-size: 1.0rem;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 1190px) {
+
+    #ListCommande .command-history .command-details .buttons button {
+        font-size: 1.1rem;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 768px) {
+
+    #ListCommande #Greentopic {
+        width: 30% !important;
+    }
+
+    #ListCommande #bambouright {
+        display: none;
+    }
+
+    #ListCommande #bambouleft {
+        width: 20% !important;
+    }
+
+    #ListCommande .command-history .command-details .buttons button {
+        font-size: 0.8rem;
+    }
+
+    #ListCommande .command-history .command-details li {
+        font-size: 1rem;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 590px) {
+
+    #ListCommande .command-history {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    #ListCommande .command-history::after {
+        display: none;
+    }
+
+    #ListCommande .command-history .command-details {
+        width: 95%;
+        padding-bottom: 0px;
+    }
+
+    #ListCommande .command-history .command-details hr{
+        position: initial;
+        margin: 20px 0px;
+    }
+
+    #ListCommande .command-history .command-details .buttons button {
+        font-size: 1.0rem;
+    }
+
+    #ListCommande .command-history .command-details .buttons {
+        position: initial;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 450px) {
+
+    #ListCommande .command-history .command-details .buttons button {
+        font-size: 0.8rem;
+    }
+
+    #ListCommande #bambouleft {
+        width: 45% !important;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 450px) {
+    #ListCommande > div {
+        margin: 30px 15px;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+
+

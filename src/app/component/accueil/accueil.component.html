@@ -1,0 +1,59 @@
+<section id="accueil">
+    <img src="/assets/ressource/greenTopRight2.svg" id="greenTopRight2">
+    <img src="/assets/ressource/bamboo2.svg" id="bamboo">
+    <div id="ourMenu" (click)="changeNavActive('menu')" routerLink="/app-menu" routerLinkActive="active">
+        <h2>Nos menus</h2>
+    </div>
+
+    <div id="pointsContainer">
+        <h3>Découvrez nos Spécialités</h3>
+    </div>
+
+    <h2>Nos recommandations</h2>
+    <div id="recommandationsContainer">
+
+        <ng-container *ngFor="let recommandation of recommandations" >
+            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active" style="background-image: url('/assets/ressource/box/{{recommandation.image}}.png');">
+                <p>{{recommandation.nom}}</p>
+                <div>
+                    <p>{{recommandation.prix}}€</p>
+                    <div id="stars">
+                        <img src="/assets/ressource/star.svg">
+                        <p>{{recommandation.stars}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        
+    </div>
+</section>
+
+<!-- Version PC -->
+
+<section id="accueil_2">
+    <div id="ourMenu_2" (click)="changeNavActive('menu')" routerLink="/app-menu" routerLinkActive="active">
+        <h2>Nos menus</h2>
+        <div id="pointsContainer_2">
+            <h3>Découvrez nos Spécialités</h3>
+        </div>
+    </div>
+    <div id="recommandation_2">
+        <h2>NOS RECOMMANDATIONS</h2>
+    </div>
+    <div id="recommandationsContainer_2">
+
+        <ng-container *ngFor="let recommandation of recommandations" >
+            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active" style="background-image: url('/assets/ressource/box/{{recommandation.image}}.png');">
+                <p>{{recommandation.nom}}</p>
+                <div>
+                    <p>{{recommandation.prix}}€</p>
+                    <div id="stars_2">
+                        <img src="/assets/ressource/star.svg">
+                        <p>{{recommandation.stars}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        
+    </div>
+</section>

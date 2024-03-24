@@ -1,0 +1,44 @@
+<section id="ListCommande">
+
+    <ng-container *ngIf="!historiqueEmpty">
+        <div>
+            <h1>Mon Profil</h1>
+            <img (click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
+        </div>
+        <h2>Historique des commandes</h2>
+        <hr>
+    </ng-container>
+
+
+    <div id="divhistoryempty" *ngIf="historiqueEmpty">
+        <div id="iddiv">
+            <h1 class="messageempty">Oh Zut !</h1>
+        </div>
+        <h2 class="messageempty">Vous n'avez pas encore commandé</h2>
+        <button routerLink="/app-menu" class="Bmenus">Voir les menus</button>
+        <img id="bambouleft"src="http://localhost:4200/assets/ressource/bamboo2.svg" alt="image de bambou">
+        <img id="bambouright"src="http://localhost:4200/assets/ressource/bamboo4.svg" alt="image d'un autre bambou">
+        <img id="Greentopic"src="http://localhost:4200/assets/ressource/greenTopRight2.svg" alt="Green Topic">
+    </div>
+
+    <div class="command-history" *ngIf="!historiqueEmpty">
+        <ng-container *ngFor="let item of historique.slice().reverse(); let i = index">
+            <div class="command-details">
+                <div class="price">
+                    <h3>Commande {{item.commandeNumber}}</h3>
+                    <h3 class="prix">{{item.price.toFixed(2)}} €</h3>
+                </div>
+                <ul>
+                    <ng-container *ngFor="let boxes of item.boxes">
+                        <li>{{boxes.nom}} x{{boxes.quantity}}</li>
+                    </ng-container>
+                </ul>
+                <div class="buttons">
+                    <button href=""class="remove-button">En cours de livraison</button>
+                    <button (click)="Annuler(historique.length - i - 1)" class="annuler">Annuler</button>
+                </div>
+                <hr>
+            </div>
+        </ng-container>
+    </div>
+</section>
