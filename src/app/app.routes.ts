@@ -6,12 +6,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EntrepriseComponent } from './components/entreprise/entreprise.component';
 
+
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HeaderComponent },
   { path: 'boxes', component: BoxesComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'entreprise', component: EntrepriseComponent }
+  { path: 'entreprise', component: EntrepriseComponent },
+
 ];
 
 @NgModule({
