@@ -1,0 +1,557 @@
+/* Version tel*/
+#accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#accueil > #bamboo{
+    position: absolute;
+    width: 45%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#accueil > #greenTopRight2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    z-index: 1;
+}
+
+#accueil #ourMenu {
+    position: relative;
+    margin-top: 35px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    background-image: url(/assets/ressource/box/sando-box-chicken-katsu.png);
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#accueil #ourMenu h2 {
+    padding: 10px 0px 10px 20px;
+    height: min-content;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: var(--white);
+
+}
+
+#accueil #pointsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: calc(90% - 40px);
+    height: 12%;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#pointsContainer > h3 {
+    font-family: Gastroe;
+    font-size: 30px;
+    font-weight: normal;
+} 
+
+
+#accueil #pointsContainer > div {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+#accueil #pointsContainer > div > p {
+    font-family: Poppins;
+    position: absolute;
+    font-size: 1rem;
+    top: -25px;
+    right: 5px;
+}
+
+#accueil #pointsContainer > div > #points {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+}
+
+#accueil #pointsContainer > div > #points::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+#accueil > h2 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+
+#accueil #recommandationsContainer {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) transparent;
+    z-index: 2;
+
+}
+
+#accueil #recommandationsContainer .recommandation {
+    overflow: hidden;
+    position: relative;
+    min-width: 65%;
+    height: calc(100% - 27px);
+    border: 2px solid var(--green);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#accueil #recommandationsContainer .recommandation::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#accueil #recommandationsContainer .recommandation:first-child {
+    margin-left: 5%;
+}
+
+#accueil #recommandationsContainer .recommandation:last-child {
+    margin-right: 5%;
+}
+
+#accueil #recommandationsContainer .recommandation p {
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 10px);
+    color: var(--white);
+    z-index: 2;
+    font-size: 1.2rem;
+}
+
+#accueil #recommandationsContainer .recommandation > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--white);
+    z-index: 2;
+    width: 100%;
+}
+
+#accueil #recommandationsContainer .recommandation > div > #stars {
+    display: flex;
+}
+
+#accueil #recommandationsContainer .recommandation > div > #stars > img {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#accueil #recommandationsContainer .recommandation > div > #stars > p {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 425px)
+{
+    #accueil #ourMenu {
+        margin-top: 9%;
+        margin-bottom: 5%;
+        width: 90%;
+        height: 23%;
+    }
+    #accueil #pointsContainer{
+        margin-top: 0%;
+        height: 12%;
+    }
+    #accueil #pointsContainer>h3{
+        font-size: 27px;
+    }
+    #accueil > h2 {
+        margin: 3% 0px 3% 10%;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #accueil #recommandationsContainer {
+        height: 30%;
+        overflow-y: hidden;
+    }
+    #accueil #recommandationsContainer .recommandation {
+        min-width: 43%;
+        height: calc(100% - 27px);
+        margin-bottom: 24px;
+    }
+    #accueil #ourMenu {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        width: 650px;
+        height: 28%;
+        background-size: contain;
+    }
+
+    #accueil #pointsContainer{
+        width: 650px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 0%;
+        z-index: 5;
+        height: 45px;
+    }
+
+    #accueil #pointsContainer>h3{
+        font-size: 30px;
+    }
+
+    #accueil > #bamboo{
+        width: 20%;
+    }
+
+    #accueil > #greenTopRight2 {
+        width: 22%;
+    }
+
+    #accueil #ourMenu h2 {
+        font-size: 1.3rem;
+    }
+
+    #accueil > h2 {
+        font-size: 1.3rem;
+        margin: 10px 0px 10px 10%;
+    }
+}
+
+/*Version Pc*/
+#accueil_2 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#accueil_2 #ourMenu_2 {
+    position: relative;
+    margin-top: 0px;
+    width: 72%;
+    height: 20%;
+    display: flex;
+    background-image: url(/assets/ressource/box/sando-box-chicken-katsu.png);
+    background-size: contain;
+    background-position: center center;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    z-index: 10;
+    overflow: hidden;
+    transition: transform 0.1s linear;
+}
+
+#accueil_2 #ourMenu_2:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#accueil_2 #ourMenu_2 h2 {
+    padding: 10px 0px 10px 20px;
+    height: min-content;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: var(--white);
+
+}
+
+#accueil_2 #pointsContainer_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: calc(90% - 40px);
+    height: 12%;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#pointsContainer_2 > h3 {
+    font-family: Gastroe;
+    font-size: 30px;
+    font-weight: normal;
+} 
+
+
+#accueil_2 #pointsContainer_2 > div {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+#accueil_2 #pointsContainer_2 > div > p {
+    font-family: Poppins;
+    position: absolute;
+    font-size: 1rem;
+    top: -25px;
+    right: 5px;
+}
+
+#accueil_2 #pointsContainer_2 > div > #points_2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+}
+
+#accueil_2 #pointsContainer_2 > div > #points_2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+#accueil_2 > h2 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+
+#accueil_2 #recommandationsContainer_2 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) transparent;
+    z-index: 2;
+
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation {
+    overflow: hidden;
+    position: relative;
+    min-width: 65%;
+    height: calc(100% - 27px);
+    border: 2px solid var(--green);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: transform 0.1s linear;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation:first-child {
+    margin-left: 5%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation:last-child {
+    margin-right: 5%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation p {
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 10px);
+    color: var(--white);
+    z-index: 2;
+    font-size: 1.2rem;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--white);
+    z-index: 2;
+    width: 100%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 {
+    display: flex;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 > img {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 > p {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    #accueil_2 #recommandationsContainer_2 {
+        height: 33%;
+    }
+    #accueil_2 #recommandationsContainer_2 .recommandation {
+        min-width: 48%;
+    }
+    #accueil_2 {
+        height: calc(100%);
+    }
+    #accueil{
+        display:none;
+    }
+    #accueil_2{
+        background-image: url(../../../assets/ressource/background_accueil.svg);
+        background-size: cover;
+        display: flex;
+    }
+    #accueil_2 #ourMenu_2 {
+        margin-top: 0%;
+        margin-bottom: 1%;
+        height: 35%;
+    }
+    #recommandation_2{
+        cursor: pointer;
+    }
+    
+    #accueil_2 #pointsContainer_2{
+        width: 300px;
+        height: 20px;
+        position: absolute;
+        bottom: 9px;
+        right: 9px;
+        border-radius: 5px;    
+        box-shadow: #3d3d3d 3px 3px 9px;
+    }
+
+    #accueil_2 #pointsContainer_2>h3{
+        font-size: 23px;
+    }
+
+    #accueil_2 #ourMenu_2 h2 {
+        font-size: 1.4rem;
+    }
+
+    #accueil_2 > h2 {
+        font-size: 1.4rem;
+        margin: 10px 0px 10px 10%;
+        font-weight: bold;
+    }
+    #recommandation_2>h2{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-family: Poppins!important;
+        font-weight: 600;
+        padding: 10px;
+    }
+} 
+@media screen and (min-width: 1440px){
+    #accueil_2 #ourMenu_2 {
+        margin-top: 5%;
+        margin-bottom: 1%;
+        height: 39%;
+        width: 48%;
+    }
+    #accueil_2 #pointsContainer_2  {
+        width: 360px;
+        height: 37px;
+    }   
+    #accueil_2 #pointsContainer_2 > h3 {
+        font-size: 31px;
+    }
+    #recommandation_2 > h2 {
+        font-size: 27px;
+    }
+    #header2 > div > img {
+        width: 100%;
+    }
+    #accueil_2 #recommandationsContainer_2 .recommandation {
+        min-width: 25%;
+        background-size: contain;
+
+}
+}

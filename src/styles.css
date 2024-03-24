@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Gastroe;
+    src: url(assets/GastroeDemo-z83wl.otf);
+}
+:root {
+    --red : #E35052;
+    --black : #202020;
+    --green : #5D935C;
+    --green-hover : #40643f;
+    --light-green : #C3D7C3;
+    --white : #FFFFFF;
+}
+
+* {
+    margin: 0px;
+    font-family: Gastroe;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    display: flex;
+    outline: none;
+    text-decoration: none;
+}
