@@ -1,19 +1,33 @@
-.mt-0{
+h1.mt-0{
     color:#FF9900;
+    font-weight: 900;
+    
 }
-img {
-    height: 500px;
-    width: 500px;
-    margin-right:200px;
+img.w-100 {
+    height: 863px;
 }
-body{
-    background-color:#202020,
+
+div.col-md-6.p-4.ps-md-0{
+
+   text-align:right;
+   padding-left:50px;
+  
 }
-.col-md-6-mb-md-0-p-md-4{
-    margin-left:75px;
+div.row.g-0.bg-body-secondary.position-relative{
     background-color: #202020 !important;
+    color:#202020;
+   
 }
-.row-g-0-bg-body-secondary-position-relative{
-    margin-left:75px;
-    background-color: #202020 !important;
+main.bg{
+    background-color: #202020;
+}
+.txt-intro{
+    color:white;
+    font-weight:500;
+    
+}
+.txt-intro2{
+    color:white;
+    font-weight:100;
+    
 }
