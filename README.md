@@ -91,7 +91,7 @@ https://github.com/IlyesBo/SAE401/tree/main/apiSushi
 
 <h2 id="maquettes-de-lapplication">Maquettes de l'application</h2>
 
-Nous avons réaliser la maquette de notre application sur l'éditeur de graphique FIGMA, [cliquez-ici pour accéder à la maquette complète.](https://www.figma.com/file/mJPIAKbHiOl9iZ70PtWVPV/SAE-401-maquette?type=design&node-id=0%3A1&mode=design&t=5dXQOrUazbawneyQ-1)
+Nous avons réaliser la maquette de notre application sur l'éditeur graphique FIGMA, [cliquez-ici pour accéder à la maquette complète.](https://www.figma.com/file/mJPIAKbHiOl9iZ70PtWVPV/SAE-401-maquette?type=design&node-id=0%3A1&mode=design&t=5dXQOrUazbawneyQ-1)
 
 Nous avons une première version et une deuxième que nous avons fait par la suite car la première ne correspondait pas totalement au cahier des charges.
 
