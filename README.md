@@ -1,4 +1,9 @@
 # SAE401
+
+# Important
+
+<h2>Nous avons dû changer de repository suite à plusieurs problèmes concernant Angular, pour accéder au ReadMe à jour veuillez vous dirigez ici: https://github.com/IlyesBo/SAE401_V2</h2>
+
 Bienvenue sur le repository GitHub de notre projet universitaire dédié à la création d'un site web de restaurant de sushi et de réservation. Ce projet vise à développer une plateforme moderne et conviviale permettant aux utilisateurs de découvrir notre restaurant, consulter le menu, effectuer des réservations et interagir avec notre équipe.
 
 <h3>Contexte</h3>
