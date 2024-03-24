@@ -80,6 +80,10 @@ Nathan l'a imaginé et dessiné sur le logiel Procreate en créant également de
 
 <h2 id="implémentation-et-architécture-de-la-partie-back">Implémentation et architécture de la partie back.</h2>
 
+![image](https://github.com/IlyesBo/SAE401/assets/115214794/e8f1f6b0-7b9d-49a5-af75-68dc536622dc)
+
+
+
 Cliquez sur le lien ci-dessous pour accéder au code de notre api REST:
 
 https://github.com/IlyesBo/SAE401/tree/main/apiSushi
