@@ -1,0 +1,36 @@
+<section id="ListCommande">
+    <div class="left-section">
+        <div id="commande" routerLink="/app-bag" routerLinkActive="active" *ngIf="!noBoxFound">
+            <h1>Ma Commande</h1>
+            <hr>
+            <div class="command-history">
+                <div class="history1">
+                    <div class="command-details" *ngFor="let box of bagBoxes">
+                        <ul>
+                            <ng-container *ngFor="let aliment of box.aliments">
+                                <li>{{box.quantite}} X {{box.nom}} </li>
+                            </ng-container>
+                        </ul>
+                        <div class="price-quantity">
+                            <h3 id="prix">{{box.prixUnite.toFixed(2)}} €</h3>
+                            <button class="remove-button" (click)="suppBox(box.itemID)">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+                <p>Livraison Offerte</p>
+                <hr>
+            </div>
+            <div class="total-section">
+                <h3 id="prixT">Total : {{totalPrix.toFixed(2)}} €</h3>
+                <button class="commander" (click)="Commander()">Commander</button>
+            </div>
+        </div>
+        <div *ngIf="noBoxFound" id="panier">
+
+            <h1>Le panier est vide</h1>
+        </div>
+    </div>
+    <div class="right-section">
+        <img src="/assets/ressource/suchill.png" alt="Logo">
+    </div>
+</section>
