@@ -11,17 +11,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavComponent,
-    MenuComponent,
-    CompteComponent,
-    AccueilComponent,
-    DemarrageComponent,
-    ConnexionComponent,
-    InscriptionComponent,
-    BoxComponent,
-    BagComponent,
-    RgpdComponent,
-  ],
+   
   imports: [
     BrowserModule,
     AppRoutingModule,
